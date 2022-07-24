@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+
+
+<!-- Fontawesome Script tag -->
+	<script src="https://kit.fontawesome.com/85ba33825d.js" crossorigin="anonymous"></script>
+
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+
+
+</head>
+<body>
+	
+
+
+	<header id="body-header">
+		<b>Explore eBooks</b>
+		
+	</header>
+
+	<nav>
+		<div class="horizontal-divs">
+			<div id="Home"><a href="#">Home</a></div>
+			<div id="My Books" style="margin-top: 0; margin-bottom: 0;">
+				<button id="booksbtn">My Books</button>
+		        <ul class="dropdown_content">
+		        	<li><a href="b8.html">The Blue Umbrella</a></li>
+			        <li><a href="b5.html">Migrations</a></li>
+			        <li><a href="b10.html">The Midnight Library</a></li>
+			        <li><a href="b12.html">One Arranged Mudrer</a></li>
+
+		        </ul>
+			</div>
+			
+
+			<div id="contact_usbtn"><a href="#contact_us">Contact Us</a></div>
+			<div id="Community"><a href="#footer">Community</a></div>
+			<!-- <div id="search-books"><input type="text" name="search-books" placeholder="Search eBooks" style="height: 35px;"><i class="fas fa-search fa-2x"></i></div> -->
+			<div class="search-bar" style="background-color: white; border-radius: 50px; text-align: center; margin: 5px; padding: 6px;">
+            <i class="fas fa-search"></i>
+            <input type="text"  placeholder="Search" id="search-input" style="text-align: center; border-style: hidden;">
+            <i class="fas fa-microphone"></i></div>
+			<div id="sign_up" style="float: right; margin-top: 15px;"><a onclick="signup()">Sign Up</a></div>
+			<div id="login" style="float: right; margin-top: 15px;"><a onclick="login()">Login</a></div>
+		</div>
+	</nav>
+    
+
+	
+
+	<main>
+
+		<!-- Def. of ebook -->
+		<div id="def">
+		<h1>Ebooks</h1>
+		<p>An electronic book (eBook) is a digital form of a book that consists of text and sometimes images, or both.Common formats of ebooks include: .iba(Apple iBooks), .azw(Amazon Kindle), EPUB and PDF files.</p>
+	    </div>
+
+	    <!-- ASIDE SECTION -->
+
+	 	<aside>
+			<h1>Authors</h1>
+			
+			<div id="ruskin_bond">
+				<div class="ruskin_bond_container">
+					<div><img src="prj_photos/authors/ruskin_bond.jpeg" style="height: 120px; width: 100px; border-radius: 50%;"></div>
+					<div style="margin-left: 30px; margin-top: 20px;">
+						<h1>Ruskin Bond</h1> 
+						2,500 followers
+
+					</div>
+				</div>
+				<p><b>Ruskin Bond</b> is an Indian author of British descent. He is considered to be an icon among Indian writers and children's authors and a top novelist. He wrote his first novel, The Room on the Roof, when he was seventeen which won John Llewellyn Rhys Memorial Prize in 1957. Since then he has written several novellas, over 500 short stories, as well as various essays and poems, all of which have established him as one of the best-loved and most admired chroniclers of contemporary India. In 1992 he received the Sahitya Akademi award for English writing, for his short stories collection, "Our Trees Still Grow in Dehra", by the Sahitya Akademi, India's National Academy of Letters in India. He was awarded the Padma Shri in 1999 for contributions to children's literature. He now lives with his adopted family in Landour near Mussoorie. </p>
+			</div>
+
+
+			<div id="sudha_murthy">
+				<div class="sudha_murthy_container">
+					<div><img src="prj_photos/authors/sudha_murthy.jpeg" style="height: 120px; width: 100px; border-radius: 50%;"></div>
+					<div style="margin-left: 30px; margin-top: 20px;">
+						<h1>Sudha Murthy</h1> 
+						1,900 followers
+
+					</div>
+				</div>
+				<p><b>Sudha Murthy</b> was born in 1950 in Shiggaon in north Karnataka. She did her MTech in computer science, and is now the chairperson of the Infosys Foundation. A prolific writer in English and Kannada, she has written nine novels, four technical books, three travelogues, one collection of short stories, three collections of non-fiction pieces and two books for children. </p>
+				<p>Her books have been translated into all the major Indian languages and have sold over three lakh copies around the country. She was the recipient of the R.K. Narayan's Award for Literature and the Padma Shri in 2006.</p>
+			</div>
+			<br>
+			<br>
+			<br>
+
+
+			<div class="container mt-5" id="contact_us">
+				<div class="card bg-secondary text-white rounded">
+					<div class="card-body mx-auto">
+						<h1 class="text-center">CONTACT US</h1>
+						
+						<!-- Name -->
+                        <div class="input-group mb-3">
+                        	<span class="input-group-text" id="basic-addon1"><i class="fa fa-user"></i></span>
+                            <input type="text" class="form-control" placeholder="Full Name" aria-label="Username" aria-describedby="basic-addon1">
+                        </div>
+
+
+                        <!-- Email -->
+                        <div class="input-group mb-3">
+                            <span class="input-group-text" id="basic-addon1"><i class="fa fa-envelope"></i></span>
+                            <input type="email" class="form-control" placeholder="Enter Email" aria-label="Username" aria-describedby="basic-addon1">
+                        </div>
+
+                        <!-- Phone -->
+                        <div class="input-group mb-3">
+                            <span class="input-group-text" id="basic-addon1"><i class="fa fa-phone"></i></span>
+                            <input type="number" class="form-control" placeholder="Phone Number" aria-label="Username" aria-describedby="basic-addon1">
+                        </div>
+
+                        <!-- Textarea -->
+                        <div class="input-group mb-3">
+                            <textarea rows="5" placeholder="type your message here....." style="width: 310px;"></textarea>
+                        </div>
+
+                        <!-- Submit btn -->
+                        <button class="btn btn-block btn-primary" style="width: 310px;">Submit</button>
+
+
+					</div>
+				</div>
+			</div>
+		</aside>	
+
+		<!-- Aside end -->
+
+
+		<!-- BOOKS -->
+
+		<div class="books-container" >
+			<a href="b1.html"><div id="b1"><img src="prj_photos/Books/harry_potter_and_sorcerer.jpg"></div></a>
+			
+			<a href="b2.html"><div id="b2"><img src="prj_photos/Books/a_handful_of_nuts.jpg"></div></a>
+
+			<a href="b3.html"><div id="b3"><img src="prj_photos/Books/great_stories_for_children.jpeg"></div></a>
+			
+			<a href="b4.html"><div id="b4"><img src="prj_photos/Books/harry_potter_and_the_order.jpg"></div></a>
+			
+			<a href="b5.html"><div id="b5"><img src="prj_photos/Books/migrations.jpg"></div></a>
+		</div>	
+		
+		<div class="books-container" >	
+			<a href="b6.html"><div id="b6"><img src="prj_photos/Books/my_dark_vanessa.jpg"></div></a>
+			
+			<a href="b7.html"><div id="b7"><img src="prj_photos/Books/grandparents_bag_of_stories.jpg"></div></a>
+			
+			<a href="b8.html"><div id="b8"><img src="prj_photos/Books/the_blue_umbrella.jpg"></div></a>
+			
+			<a href="b9.html"><div id="b9"><img src="prj_photos/Books/harry_potter_and_the_ph.jpg"></div></a>
+			
+			<a href="b10.html"><div id="b10"><img src="prj_photos/Books/the_midnight_library.jpg"></div></a>
+		</div>	
+        
+        <div class="books-container">
+			<a href="b11.html"><div id="b11"><img src="prj_photos/Books/the_guest_list.jpg"></div></a>
+			
+			<a href="b12.html"><div id="b12"><img src="prj_photos/Books/one_arranged_murder.jpeg"></div></a>
+			
+			<a href="b13.html"><div id="b13"><img src="prj_photos/Books/how_i_taught_my_grandmother.jpg"></div></a>
+			
+			<a href="b14.html"><div id="b14"><img src="prj_photos/Books/the_glass_hotel.jpg"></div></a>
+			
+			<a href="b15.html"><div id="b15"><img src="prj_photos/Books/the_vanishing_half.jpg"></div></a>
+		</div>
+
+		
+
+		<!-- New Releases -->
+		<div class="new_releases">
+            <h1><b>New Releases</b></h1>
+
+            <div class="nrel1_container">
+            	
+            	<div style="width: 170px"><img src="prj_photos/new_releases/nrel1.jpg" style="height: 220px; width: 155px; border: 1px solid black; margin-top: 30px;"></div>
+            	
+            	<div><h1>It’s a Wonderful Life: Roads to Happiness</h1>
+            	by Ruskin Bond, <br>
+            	<b>Release Date:10 April 2021</b> <br> <br>
+            	<b>
+            	<i class="fas fa-star fa-2x" style="color: gold;"></i>
+                <i class="fas fa-star fa-2x" style="color: gold;"></i>
+                <i class="fas fa-star fa-2x" style="color: gold;"></i>
+                <i class="fas fa-star fa-2x" style="color: gold;"></i> 
+                <i class="fas fa-star-half-alt fa-2x" style="color: gold;"></i>
+            
+                4.61/5
+                </b> 
+
+                <br>
+
+            	<p>In a grey and frightened world driven to despair by the pandemic, Ruskin Bond’s luminous new book, It’s a Wonderful Life, cuts through the gloom like a blade of bright steel. His unerring eye seeks out the joys and positive truths to be found in the smallest of incidents that occur in our lives, the good news and sources of happiness that we often miss out on as a result of the anxiety and bad news that has pervaded our daily existence over the past year.</p>
+                <p>Perceptive, uplifting, and deeply moving, It’s a Wonderful Life is another triumph from one of our most beloved writers.</p>
+
+            	</div>
+            	
+      
+            </div>
+
+            <div class="nrel2_container">
+            	
+            	<div style="width: 170px"><img src="prj_photos/new_releases/nrel2.jpg" style="height: 220px; width: 155px; border: 1px solid black; margin-top: 30px;"></div>
+            	
+            	<div><h1>Sparks Like Stars</h1>
+            	by Nadia Hashimi, <br>
+            	<b>Release Date:2 March 2021</b> <br> <br>
+            	<b>
+            		<i class="fas fa-star fa-2x" style="color: gold;"></i>
+                    <i class="fas fa-star fa-2x" style="color: gold;"></i>
+                    <i class="fas fa-star fa-2x" style="color: gold;"></i>
+                    <i class="fas fa-star fa-2x" style="color: gold;"></i> 
+                    <i class="fas fa-star-half-alt fa-2x" style="color: gold;"></i>
+             
+            	    4.4/5
+                </b> 
+
+                <br>
+
+            	<p>
+            		Kabul, 1978: The daughter of a prominent family, Sitara Zamani lives a privileged life in Afghanistan’s thriving cosmopolitan capital. The 1970s are a time of remarkable promise under the leadership of people like Sardar Daoud, Afghanistan’s progressive president, and Sitara’s beloved father, his right-hand man. But the ten-year-old Sitara’s world is shattered when communists stage a coup, assassinating the president and Sitara’s entire family. Only she survives.</p>
+            		
+            	<p>
+            		Smuggled out of the palace by a guard named Shair, Sitara finds her way to the home of a female American diplomat, who adopts her and raises her in America. In her new country, Sitara takes on a new name—Aryana Shepherd—and throws herself into her studies, eventually becoming a renowned surgeon.</p>
+            		
+            	<p>	
+            		New York, 2008: Thirty years after that fatal night in Kabul, Aryana’s world is rocked again when an elderly patient appears in her examination room—a man she never expected to see again. It is Shair, the soldier who saved her, yet may have murdered her entire family. Seeing him awakens Aryana’s fury and desire for answers—and, perhaps, revenge.
+ 
+
+            	</p>
+
+            	</div>
+            	
+      
+            </div>
+			
+			
+	    </div>
+
+	</main>
+
+
+	<footer id="footer">
+  <div class="footer-wrap">
+  <div class="container first_class">
+      <div class="row">
+        <div class="col-md-4 col-sm-6">
+          <h3>BE THE FIRST TO KNOW</h3>
+          <p>Get all the information about reviews on recently launched books!. Sign up for our newsletter today.</p>
+        </div>
+        <div class="col-md-4 col-sm-6">
+        <form class="newsletter">
+           <input type="text" placeholder="Email Address"> 
+           <button class="newsletter_submit_btn" type="submit"><i class="fa fa-paper-plane"></i></button>  
+        </form>
+        
+        </div>
+        <div class="col-md-4 col-sm-6">
+        <div class="col-md-12">
+          <div class="standard_social_links">
+        <div>
+          <li class="round-btn btn-facebook"><a href="#"><i class="fab fa-facebook-f"></i></a>
+
+          </li>
+          <li class="round-btn btn-linkedin"><a href="#"><i class="fab fa-linkedin-in" aria-hidden="true"></i></a>
+
+          </li>
+          <li class="round-btn btn-twitter"><a href="#"><i class="fab fa-twitter" aria-hidden="true"></i></a>
+
+          </li>
+          <li class="round-btn btn-instagram"><a href="#"><i class="fab fa-instagram" aria-hidden="true"></i></a>
+
+          </li>
+          <li class="round-btn btn-whatsapp"><a href="#"><i class="fab fa-whatsapp" aria-hidden="true"></i></a>
+
+          </li>
+          <li class="round-btn btn-envelop"><a href="#"><i class="fa fa-envelope" aria-hidden="true"></i></a>
+
+          </li>
+        </div>
+      </div>  
+        </div>
+          <div class="clearfix"></div>
+        <div class="col-md-12"><h3 style="text-align: right;">Stay Connected</h3></div>
+        </div>
+      </div>
+  </div>
+    <div class="second_class">
+      <div class="container second_class_bdr">
+      <div class="row">
+        <div class="col-md-4 col-sm-6">
+
+          <div class="footer-logo"><img src="book123.png" alt="logo">
+          </div>
+          <p>Your one stop platform to find information and reviews about all your favourite books.</p>
+        </div>
+        <div class="col-md-2 col-sm-6">
+          <h3>Quick  LInks</h3>
+          <ul class="footer-links">
+            <li><a href="#">Home</a>
+            </li>
+            <li><a href="#">About us</a>
+            </li>
+            <li><a href="#">Authors</a>
+            </li>
+            <li><a href="#">Contact Us</a>
+            </li>
+            <li><a href="#" target="_blank">Terms &amp; Conditions</a>
+            </li>
+            <li><a href="#" target="_blank">Privacy Policy</a>
+            </li>
+            <li><a href="#">Sitemap</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-md-3 col-sm-6">
+          <h3>WORK WITH US</h3>
+          <ul class="footer-category">
+            <li><a href="#">Authors</a>
+            </li>
+            <li><a href="#">Internship &amp; Projects </a>
+            </li>
+            <li><a href="#">Advertise</a>
+            </li>
+            <li><a href="#">Authors and Ads Blog</a>
+            </li>
+            <li><a href="#">Review With Us!</a>
+            </li>
+          </ul>
+          <div class="clearfix"></div>
+        </div>
+        <div class="col-md-3 col-sm-6">
+          <h3>EVENTS</h3>
+          <ul class="footer-links">
+            <li><a href="#">Novel Reading Competition</a>
+            </li>
+
+            <li><a href="#">Book &AMP; Internship Fair 2021</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      
+    </div>
+    </div>
+    
+    <div class="row">
+      
+      <div class="container-fluid">
+      <div class="copyright"> Copyright 2021 | All Rights Reserved by Co. Pvt. Ltd. </div>
+      </div>
+      
+    </div>
+  </div>
+  
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+
+  <script type="text/javascript" src="script.js">
+  </script>
+
+
+
+</body>
+</html>
